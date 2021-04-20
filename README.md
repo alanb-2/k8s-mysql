@@ -22,14 +22,9 @@ Note: Depending on the OS, it may be necessary to prefix all commands with `sudo
     kubectl cluster-info --context kind-mysql
     ```
 
-3.  Create the namespace:
+3.  Deploy the MySQL instance:
     ```shell
-    kubectl apply -f k8s/local/namespace.yaml
-    ```
-    
-4.  Apply the rest of the configuration:
-    ```shell
-    kubectl apply -f k8s/local/
+    kubectl apply -k k8s/local/
     ```
 
 ## Usage
